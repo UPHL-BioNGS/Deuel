@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/UPHL-BioNGS/Deuel/main/nextflow_schema.json",
+    "title": "Deuel Parameters",
+    "description": "Deuel is for emmtyping.",
+    "type": "object",
+    "properties": {
+        "outdir": {
+            "type": "string",
+            "description": "result output directory",
+            "default": "grandeur"
+        },
+        "reads": {
+            "type": "string",
+            "description": "directory of reads"
+        },
+        "sample_sheet": {
+            "type": "string",
+            "description": "csv with sample,read1,read2"
+        },
+        "test": {
+            "type": "boolean",
+            "description": "using test files in workflow"
+        }
+    }
+}
